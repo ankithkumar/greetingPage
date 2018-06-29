@@ -31,12 +31,7 @@ let checkForMeridian = function (hours) {
 }
 
 let convertHoursToFitMeridian = function (hours) {
-    if (hours === 0) {
-        return 12;
-    }
-    if (hours > 12) {
-        return hours % 12;
-    }
+    return hours === 0 ? 12 : hours % 12;
 }
 
 let getDateObject = function() {
@@ -70,7 +65,7 @@ focusOn = function (domObject) {
     domObject.focus();
 }
 
-initialize = function() {
+initialise = function() {
     let timeIdOfDomObject = document.getElementById('time-of-day');
     let greetIdOfDomObject = document.getElementById('greet-message');
     let forTheDayIdOfDomObject = document.getElementById('for-the-day');

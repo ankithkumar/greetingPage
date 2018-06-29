@@ -38,13 +38,18 @@ body {
         text-transform: uppercase;
 }
 
-.input-class {
+.input-class, .input-class:focus {
     background: transparent;
     width: 60%;
     text-align: center;
-    border:none;
-    color: black;
-    border-bottom: 5px solid rgb(233, 213, 213);
+    border:none; 
+    border-bottom: 5px solid rgb(223, 19, 19);
+    background-color: transparent;
+    color: #CCC;
+}
+
+.input-class:focus {
+    outline: none;
 }
 
 .for-the-day-class {
