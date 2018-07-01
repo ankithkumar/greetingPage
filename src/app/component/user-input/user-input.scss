@@ -1,0 +1,7 @@
+$width: 50%;
+$color: rgba(100, 220, 40, 0.4);
+.center {
+    width: $width;
+    background-color: $color;
+    margin: 20px auto;
+}
